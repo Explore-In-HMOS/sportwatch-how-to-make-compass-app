@@ -1,0 +1,44 @@
+<div class="scrX">
+    <text value="{{angle}}°" style="position:absolute;top:6px;left:50%;
+            transform:translateX(-50%);color:#0ff;font-size:20px;font-weight:700;z-index:50;"></text>
+
+
+    <text value="{{direction}}" style="position:absolute;top:32px;left:50%;
+            transform:translateX(-50%);color:#0ff;font-size:16px;font-weight:600;z-index:50;"></text>
+
+    <div @click="handleClick"
+         style="position:absolute;left:50%;top:50%;
+                 width:0;height:0;z-index:30;
+                 transform: rotate({{angle + 'deg'}});">
+
+        <div style="position:absolute;left:-2px;top:-110px;
+                width:4px;height:110px;background-color:#ff0000;"></div>
+        <div style="position:absolute;left:-8px;top:-8px;
+                width:16px;height:16px;border-radius:8px;
+                border:3px solid #ff0000;background-color:#fff;"></div>
+    </div>
+
+    <div class="rowTopX">
+        <text class="kX" value="N" @click="handleClick"></text>
+    </div>
+
+    <div class="lineNorthX"></div>
+
+    <div class="rowMidX">
+        <text class="bX" value="W" @click="handleClick"></text>
+        <div class="centerX"></div>
+        <text class="dX" value="E" @click="handleClick"></text>
+    </div>
+
+    <div class="lineWestX"></div>
+    <div class="lineEastX"></div>
+    <div class="lineSouthX"></div>
+
+    <div class="rowBotX">
+        <text class="gX" value="S" @click="handleClick"></text>
+    </div>
+
+    <div class="controls">
+        <text class="btnX" value="Kalibre Et" @click="handleCalibrate"></text>
+    </div>
+</div>

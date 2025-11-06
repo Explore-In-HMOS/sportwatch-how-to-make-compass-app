@@ -1,0 +1,129 @@
+.scrX {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.angleText {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #0ff;
+  font-size: 22px;
+  font-weight: 700;
+  z-index: 50;
+}
+
+.rowTopX, .rowMidX, .rowBotX {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  position: relative;
+}
+.rowTopX {
+  width: 100px;
+  height: 40px;
+}
+.rowMidX {
+  width: 240px;
+  height: 60px;
+  justify-content: space-between;
+}
+.rowBotX {
+  width: 100px;
+  height: 40px;
+}
+
+.kX, .bX, .dX, .gX {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  z-index: 10;
+}
+
+.lineNorthX, .lineSouthX, .lineWestX, .lineEastX {
+  position: absolute;
+  background-color: #ff0000;
+  z-index: 1;
+}
+.lineNorthX {
+  width: 4px;
+  height: 100px;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.lineSouthX {
+  width: 4px;
+  height: 100px;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.lineWestX {
+  width: 100px;
+  height: 4px;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.lineEastX {
+  width: 100px;
+  height: 4px;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.centerX {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  border-radius: 9px;
+  border: 3px solid #ff0000;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+}
+
+.controls {
+  position: absolute;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 60;
+}
+.btnX {
+  width: 120px;
+  height: 45px;
+  background-color: #111;
+  border: 2px solid #0ff;
+  border-radius: 10px;
+  color: #0ff;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 45px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.4);
+}
+.btnX:active {
+  opacity: .8;
+  transform: scale(0.97);
+}
