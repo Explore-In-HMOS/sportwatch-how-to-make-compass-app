@@ -1,6 +1,6 @@
 {
   "app": {
-	"bundleName": "com.hmosdemos.compassapp",
+	"bundleName": "com.hmosdemos.lite_wearable.compass_lite_app",
 	"vendor": "hmosdemos",
 	"version": {
 	  "code": 1000000,

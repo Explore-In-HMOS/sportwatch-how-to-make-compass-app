@@ -163,18 +163,18 @@ export default {
 
     buildNeedleStyle(a) {
         const baseStyle = 'position:absolute;left:50%;top:50%;width:0;height:0;z-index:30;'
-        const transform = "transform:translate(-50%,-50%) rotate(" + a + "deg);"
+        const transform = `transform:translate(-50%,-50%) rotate(${a}deg);`
         const transition = 'transition:transform 200ms ease-out;'
-        return baseStyle + transform + transition
+        return `${baseStyle}${transform}${transition}`
     },
 
     handleClick(e) {
         const val = e.target.attr.value
-        console.error(val + 'Clicked')
+        console.error(`${val}Clicked`)
 
         if (val) {
             this.logDirectionSelection(val)
-            console.error(val + ' direction selected')
+            console.error(`${val} direction selected`)
         }
     },
 
