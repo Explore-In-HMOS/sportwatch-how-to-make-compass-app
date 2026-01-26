@@ -7,7 +7,7 @@ It uses the device sensors to calculate the **real-time heading (North angle)** 
 
 # Preview
 
-<p align="center">
+<p>
   <img src="screenshots/img.png" alt="Compass Preview" width="25%" />
 </p>
 
